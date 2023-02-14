@@ -6,7 +6,7 @@ public class DriversLicence extends Card {
     private int expYear;
 
     public DriversLicence(String name, int exp){
-        super.Card(name);
+        super.NameCard(name);
         expYear=exp;
     }
     

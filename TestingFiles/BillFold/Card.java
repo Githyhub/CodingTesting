@@ -3,12 +3,15 @@ package BillFold;
 public class Card {
     private String name;
 
-    public Card(){
+    public void Card(){
         name ="";
     }
 
-    public Card(String n){
+    public void NameCard(String n){
         name = n;
+    }
+    public String NameCard(){
+       return name;
     }
 
     public String getName(){

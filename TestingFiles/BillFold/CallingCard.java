@@ -6,7 +6,7 @@ public class CallingCard extends Card {
 
     
     public CallingCard(String name, int cardNumber, int pin){
-        super.Card(name)=name;
+         super.NameCard(name);
         this.cardNumber=cardNumber;
         this.pin =pin;
     }
@@ -17,7 +17,7 @@ public class CallingCard extends Card {
     }
 
     public String toString(){
-        return (super.Card(Name) + cardNumber + pin );
+        return (super.NameCard() + cardNumber + pin );
     }
     
 }

@@ -6,7 +6,7 @@ public class idCard extends Card{
     private String idNumber;
 
     public idCard(String name, String id){
-        super.Card(name);
+        super.NameCard(name);
         idNumber=id;
     }
 
