@@ -27,7 +27,7 @@ public class DriversLicence extends Card {
     }
 
     public String toString(){
-        return (super.Card(name) + expYear );
+        return (super.NameCard() + expYear );
     }
 
 }

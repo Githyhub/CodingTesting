@@ -16,7 +16,7 @@ public class idCard extends Card{
     }
     
     public String toString(){
-        return (super.Card(Name) + idNumber );
+        return (super.NameCard() + idNumber );
     }
 
 }
