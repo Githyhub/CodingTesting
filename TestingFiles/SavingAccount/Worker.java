@@ -4,7 +4,14 @@ public abstract class Worker {
     private Double wage;
     private String name;
 
+    public Worker(Double wage, String name){
+        this.wage = wage;
+        this.name = name;
+    }
 
+    public String name(){
+        return name;
+    }
     public void HourlyWorker(int hours){
         wage = 45.00;
         if (hours>40){
@@ -18,6 +25,6 @@ public abstract class Worker {
        return hours*wage;
     }
     String computePay(Worker w,int hours){
-        return w +":"+ (hours*wage);
+        return w.name() +":"+ (hours*wage);
     }
 }
