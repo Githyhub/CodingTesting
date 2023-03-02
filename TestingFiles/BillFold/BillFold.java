@@ -42,4 +42,8 @@ public class BillFold {
         }
         return count;
     }
+
+    public String format(){
+
+    }
 }
