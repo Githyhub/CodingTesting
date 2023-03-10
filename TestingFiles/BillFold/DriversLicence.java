@@ -11,7 +11,7 @@ public class DriversLicence extends Card {
     }
     
     public String format(){
-        return super.format() + expYear;
+        return super.format() + " " + expYear;
 
     }
     public boolean isExpired(){

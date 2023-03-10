@@ -23,7 +23,7 @@ public class Card {
     }
 
     public String format(){
-        return "Card Holder: " + name;
+        return "Card Holder: " + name + " ";
     }
 
     public String toString(){

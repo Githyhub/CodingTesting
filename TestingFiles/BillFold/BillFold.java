@@ -44,6 +44,6 @@ public class BillFold {
     }
 
     public String format(){
-
+           return card1.toString() + card2.toString(); 
     }
 }
