@@ -1,30 +1,21 @@
 package SavingAccount;
 
-public abstract class Worker {
-    private Double wage;
+abstract class Worker {
     private String name;
+    private double payRate;
 
-    public Worker(Double wage, String name){
-        this.wage = wage;
+    public Worker(String name, double payRate) {
         this.name = name;
+        this.payRate = payRate;
     }
 
-    public String name(){
+    public String getName() {
         return name;
     }
-    public void HourlyWorker(int hours){
-        wage = 45.00;
-        if (hours>40){
-            wage= 1.5 * wage;
-        }
+
+    public double getPayRate() {
+        return payRate;
     }
-    public void SalariedWorker(){
-        wage = 35.00;
-    }
-    double computePay(int hours){
-       return hours*wage;
-    }
-    String computePay(Worker w,int hours){
-        return w.name() +":"+ (hours*wage);
-    }
+
+    public abstract double computePay(int hours);
 }
